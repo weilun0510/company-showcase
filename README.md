@@ -1,36 +1,47 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 轩晔门户网站
 
-## Getting Started
+## 开发框架
 
-First, run the development server:
+This is a [Next.js](https://nextjs.org/) project bootstrapped with
+[`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-```bash
+## 维护开发
+
+```
+# 安装依赖
+npm i
+
+# 开发
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+
+#打包
+npm run build
+
+# 启动本地服务
+npm run start
+
+# ts类型检查
+npm run lint
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 机器目录
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 首次部署
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+1. 除了 node_modules、.next、.git、.gitignore、.vscode，其他都上传
+2. npm i
+3. npm run build
+4. 启动服务 pm2 start npm --name yourName -- run start
 
-## Learn More
+## 更新部署
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+1. 除了 node_modules、.next、.git、.gitignore、.vscode，其他都上传
+2. npm i
+3. npm run build
+4. 重启服务 pm2 restart pmId
 
 ## Deploy on Vercel
 
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
